@@ -1,4 +1,4 @@
-public class DoWhile { //test
+public class DoWhile {
     public static void main(String[] args) {
         int x = 26;
         int count = 0;
