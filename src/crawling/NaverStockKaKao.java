@@ -31,3 +31,8 @@ public class NaverStockKaKao {
             System.out.println(lowPrice);
 
 
+        } catch (IOException e) {
+            System.out.println("오류임");
+        }
+    }
+}
