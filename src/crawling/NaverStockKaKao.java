@@ -8,3 +8,6 @@ import java.io.IOException;
 
 public class NaverStockKaKao {
     public static void main(String[] args) {
+
+        String URL = "https://finance.naver.com/item/main.naver?code=035720";
+        Document doc;
