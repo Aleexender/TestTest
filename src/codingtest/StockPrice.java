@@ -8,3 +8,9 @@ public class StockPrice {
             for (int j = i + 1; j < answer.length; j++) {
                 answer[i]++;// 리스트 값 추가
 
+                if(prices[i] > prices[j]) break; // i가 j보다 클때, 하지만 이해 안감
+            }
+        }
+        return answer;
+    }
+}
