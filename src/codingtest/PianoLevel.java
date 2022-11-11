@@ -11,3 +11,6 @@ public class PianoLevel {
         boolean ascending = true;
         boolean descending = true;
 
+        for (int i = 0; i < 8; i++ ) {
+            data[i] = scanner.nextInt(); // int를 정수로 받는 메소드
+        }
