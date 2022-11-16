@@ -6,7 +6,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
-public class NaverStockKaKao {
+public class   NaverStockKaKao {
     public static void main(String[] args) {
 
         String URL = "https://finance.naver.com/item/main.naver?code=035720";
@@ -22,7 +22,7 @@ public class NaverStockKaKao {
             Elements highestPrice = doc.getElementsByAttributeValue("class", "no_up").get(0).getElementsByAttributeValue("class","blind");
             String highPrice = highestPrice.text();
 
-            Elements lowestPrice = doc.getElementsByAttributeValue("class", "no_down").get(0).getElementsByAttributeValue("class","blind");
+            Elements lowestPrice = doc.getElementsByAttributeValue("class", "no_down").get(3).getElementsByAttributeValue("class","blind");
             String lowPrice = lowestPrice.text();
 
 
