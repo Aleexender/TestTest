@@ -4,3 +4,4 @@ out/**
 src/.DS_Store
 .DS_Store
 .idea/compiler.xml
+.idea/libraries/jsoup_1_15_3.xml
