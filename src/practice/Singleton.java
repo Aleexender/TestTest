@@ -13,3 +13,5 @@ public class Singleton implements Serializable {
                 }
             }
         }
+        return instance;
+    }
