@@ -15,3 +15,9 @@ public class Singleton implements Serializable {
         }
         return instance;
     }
+
+    protected Object readResolve() { // 역직렬화 대응방안
+        return getInstance();
+
+    }
+}
