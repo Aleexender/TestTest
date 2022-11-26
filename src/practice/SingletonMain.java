@@ -13,3 +13,7 @@ public class SingletonMain {
         Constructor<Singleton> constructor = Singleton.class.getDeclaredConstructor(); // 리플렉션 (싱글톤을 깨트리는 방법)
         constructor.setAccessible(true);
         Singleton singleton2 = constructor.newInstance();
+
+        System.out.println(singleton == singleton1);
+        System.out.println(singleton == singleton2);
+
