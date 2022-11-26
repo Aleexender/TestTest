@@ -22,3 +22,9 @@ public class SingletonMain {
         }
         try(ObjectInput in = new ObjectInputStream(new FileInputStream("singleton.obj"))) {
            singleton3 = (Singleton) in.readObject();
+        }
+
+        System.out.println(singleton == singleton3);
+
+    }
+}
