@@ -17,3 +17,8 @@ public class SingletonMain {
         System.out.println(singleton == singleton1);
         System.out.println(singleton == singleton2);
 
+        try (ObjectOutput out = new ObjectOutputStream(new FileOutputStream("singleton.obj"))) { // 직렬화 역직렬화
+            out.writeObject(singleton);
+        }
+        try(ObjectInput in = new ObjectInputStream(new FileInputStream("singleton.obj"))) {
+           singleton3 = (Singleton) in.readObject();
