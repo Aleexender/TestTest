@@ -11,3 +11,5 @@ public class SingletonMain {
         Singleton singleton3 = null;
 
         Constructor<Singleton> constructor = Singleton.class.getDeclaredConstructor(); // 리플렉션 (싱글톤을 깨트리는 방법)
+        constructor.setAccessible(true);
+        Singleton singleton2 = constructor.newInstance();
