@@ -9,3 +9,5 @@ public class Plus {
         int c = 5;
         int d = 2;
 
+        b=+a;
+        c+=d;
