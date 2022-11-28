@@ -11,3 +11,8 @@ public class Plus {
 
         b=+a;
         c+=d;
+        System.out.println(b); //6
+        System.out.println(c);
+
+    }
+}
