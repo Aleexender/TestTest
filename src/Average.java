@@ -10,3 +10,10 @@ public class Average {
         double answer = 0;
         double qwe = 0;
 
+        for (int i = 0; i < qwe2.size(); i++) {
+            answer += qwe2.get(i);
+        }
+        answer /= qwe2.size();
+        return answer;
+    }
+}
