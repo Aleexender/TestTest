@@ -7,3 +7,6 @@ public class Average {
         for (int qwe : numbers) {
             qwe2.add(qwe);
         }
+        double answer = 0;
+        double qwe = 0;
+
