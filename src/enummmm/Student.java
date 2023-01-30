@@ -9,3 +9,10 @@ public enum Student {
     String age;
     String school;
 
+    Student(String name, String age, String school) {
+        this.name = name;
+        this.age = age;
+        this.school = school;
+    }
+
+}
