@@ -10,3 +10,9 @@ public class ExtendCH extends ExtendPa {
         System.out.println(parent.getAge());
         System.out.println(parent.getName());
     }
+
+    public void parentSkill() {
+        parent.say();
+    }
+
+}
