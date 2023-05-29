@@ -22,3 +22,27 @@ public class LamdaPractice {
                     .forEach(i -> {});
         }
 
+        List<String> list = new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("d");
+
+        list.stream().filter(qwe -> qwe.equals("a"));
+
+
+        Arrays.stream(a)
+                .filter(qw -> qw / 2 == 0 && qw / 3 == 0);
+        Arrays.stream(a)
+                .filter(qw -> qw / 2 == 0 )
+                .filter(qw -> qw / 3 == 0);
+
+
+
+
+//        if () {
+//
+//        }
+//                .forEach(System.out::println);
+    }
+}
