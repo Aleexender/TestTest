@@ -42,18 +42,18 @@ public class BFSHardOne {
             if (presentRow - 1 >= 0 && maze[presentRow - 1][presentColum] == '1') { // 위쪽
                 q.offer(new int[]{presentRow - 1, presentColum, nowNode[2] + 1});
             }
-            if (presentColum+1 < maze[presentRow].length && maze[presentRow][presentColum + 1] == '1') { // 오른쪽
-                q.offer(new int[] {presentRow, presentColum+1,nowNode[2]+1});
+            if (presentColum + 1 < maze[presentRow].length && maze[presentRow][presentColum + 1] == '1') { // 오른쪽
+                q.offer(new int[]{presentRow, presentColum + 1, nowNode[2] + 1});
             }
-            if (presentRow+1 < maze.length && maze[presentRow+1][presentColum] == '1') { // 아래
-                q.offer(new int[]{presentRow + 1, presentColum,nowNode[2]+1});
+            if (presentRow + 1 < maze.length && maze[presentRow + 1][presentColum] == '1') { // 아래
+                q.offer(new int[]{presentRow + 1, presentColum, nowNode[2] + 1});
             }
-            if (presentColum -1 >= 0 && maze[presentRow][presentColum - 1] == '1') { // 오른쪽
+            if (presentColum - 1 >= 0 && maze[presentRow][presentColum - 1] == '1') { // 오른쪽
                 q.offer(new int[]{presentRow, presentColum - 1, nowNode[2] + 1});
             }
 
             if (presentRow == maze.length - 1 && presentColum == maze[presentRow].length - 1) {
-                System.out.println(nowNode[2]+1);
+                System.out.println(nowNode[2] + 1);
                 break;
             }
         }
