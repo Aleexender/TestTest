@@ -43,11 +43,8 @@ public class Organic {
         validate[row][colum] = true;
 
 
-
-
         //recursive case 넘겨줄것
-//
-        for (int dir = 0; dir < 4; dir++) {
+        for (int dir = 0; dir < 4; dir++) { //4방향으로 넘겨주는것
             int newRow = row + dirRow[dir];
             int newCol = colum + dirCol[dir];
 
@@ -68,7 +65,7 @@ public class Organic {
     }
 
     public static void fun2(int row, int colum, int[][] farm, boolean[][] validate) { //bfs
-        Queue<Integer> q = new LinkedList<Integer>();
+        Queue<Integer> q = new LinkedList<>();
         q.offer(row);
         q.offer(colum);
 
