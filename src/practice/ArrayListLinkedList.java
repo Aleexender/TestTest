@@ -8,14 +8,15 @@ public class ArrayListLinkedList {
 
         integerArrayList.add(1);
         integerArrayList.add(2);
-        integerArrayList.add(0,3);
+        integerArrayList.add(0, 3);
 
-        integerArrayList.set(0,4);
+        integerArrayList.set(0, 4);
         integerArrayList.remove(0);
         integerArrayList.get(1);
 
         System.out.println(integerArrayList);
 //        System.out.println(integerArrayList.get(1));
 
+        System.out.println();
     }
 }
