@@ -20,8 +20,8 @@ public class SingletonMain {
         try (ObjectOutput out = new ObjectOutputStream(new FileOutputStream("singleton.obj"))) { // 직렬화 역직렬화
             out.writeObject(singleton);
         }
-        try(ObjectInput in = new ObjectInputStream(new FileInputStream("singleton.obj"))) {
-           singleton3 = (Singleton) in.readObject();
+        try (ObjectInput in = new ObjectInputStream(new FileInputStream("singleton.obj"))) {
+            singleton3 = (Singleton) in.readObject();
         }
 
         System.out.println(singleton == singleton3);
